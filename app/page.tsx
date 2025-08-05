@@ -32,9 +32,10 @@ export default function UpaasanaStudio() {
   const [lightboxIndex, setLightboxIndex] = useState(0)
 
   const portfolioImages = [
-    "/placeholder.svg?height=600&width=400",
-    "/placeholder.svg?height=600&width=400",
-    "/placeholder.svg?height=600&width=400",
+    "/mohanlal.jpg",
+    "/mohanlal-2.jpg",
+    "/mohanlal-3.jpg",
+     "/aniesh.jpg",
     "/placeholder.svg?height=600&width=400",
     "/placeholder.svg?height=600&width=400",
     "/placeholder.svg?height=600&width=400",
@@ -95,10 +96,10 @@ export default function UpaasanaStudio() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-100">
         <div className="container mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center">
-            <Image src="/logo.jpg" alt="UPAASANA STUDIO" width={180} height={60} className="h-12 w-auto" />
+            <Image src="/logo.jpg" alt="UPAASANA STUDIO" width={180} height={60} className="h-20 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
@@ -205,30 +206,23 @@ export default function UpaasanaStudio() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-end overflow-hidden">
+      <section className="relative h-screen flex items-end overflow-hidden mt-20">
         <div className="absolute inset-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-            <source src="/placeholder.mp4" type="video/mp4" />
-            {/* Fallback image if video doesn't load */}
-            <Image
-              src="/placeholder.svg?height=800&width=1200"
-              alt="Aneesh Upasana Photography"
-              fill
-              className="object-cover"
-              priority
-            />
+          <video autoPlay muted loop playsInline className="w-full h-full object-cover object-center">
+            <source src="/mohanlal-hero.mp4" type="video/mp4" />
+         
           </video>
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        <div className="relative z-10 text-white max-w-2xl mx-auto px-6 lg:px-8 pb-20 w-full">
+        <div className="absolute left-1 bottom-1 z-10 text-white max-w-xl mx-auto px-1 lg:px-12 pb-20 w-full">
           <div className="text-left">
-            <h1 className="text-5xl md:text-7xl font-serif font-light mb-6 leading-tight">
+            <h1 className="text-5xl md:text-5xl font-serif font-light mb-6 leading-tight">
               Capturing Life's
               <br />
               <span className="font-medium">Precious Moments</span>
             </h1>
-            <p className="text-xl md:text-2xl font-light">Professional Photography & Videography by Aneesh Upasana</p>
+            <p className="text-xl md:text-xl font-light">Professional Photography by Aneesh Upasana</p>
           </div>
         </div>
       </section>
@@ -265,17 +259,17 @@ export default function UpaasanaStudio() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/mohanlal-3.jpg"
                 alt="Aneesh Upasana"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-yellow-600 text-black p-6 rounded-lg">
+              {/* <div className="absolute -bottom-6 -right-6 bg-yellow-600 text-black p-6 rounded-lg">
                 <Award className="h-8 w-8 mb-2" />
                 <div className="font-medium">Award Winning</div>
                 <div className="text-sm">Photographer</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -286,7 +280,7 @@ export default function UpaasanaStudio() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-light mb-6">
-              <span className="font-medium">UPAASANA</span> Studio
+              <span className="font-medium">ANEESH UPAASANA</span> STUDIO
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Our state-of-the-art studio is equipped with professional lighting, backdrops, and the latest photography
